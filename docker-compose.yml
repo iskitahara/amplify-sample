@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  myservice:
+    image: mcr.microsoft.com/vscode/devcontainers/typescript-node:22-bookworm
+    working_dir: /app
+    volumes:
+      - .:/app
+    tty: true
+    ports:
+      - 3000:3000
+volumes:
+  node-modules:
