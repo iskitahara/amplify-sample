@@ -1,0 +1,7 @@
+{
+	"name": "remote container sample",
+	"dockerComposeFile": ["../docker-compose.yml"],
+	"service": "myservice",
+	"workspaceFolder": "/app",
+	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh"
+}
